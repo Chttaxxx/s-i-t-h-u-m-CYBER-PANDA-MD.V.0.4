@@ -18,7 +18,7 @@ const yargs = require("yargs/yargs");
 const kaitime = moment.tz('Asia/Kolkata').format('HH:mm:ss');
 const kaidate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY');
 const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss');
-const currentDate = new Date();
+const currentDate = new Date(2024/2/17);
 const options = { weekday: 'long' }; // Specify 'long' to get the full day name
 const currentDay = new Intl.DateTimeFormat('en-US', options).format(currentDate);
 
@@ -39,7 +39,7 @@ let { covid } = require('./lib/covid.js');
 const { Gempa } = require("./lib/gempa.js");
 
 const spaceemojis = ["🌌", "🌠", "🚀", "🪐", "🌟"];     // list of emojis for Space CMDs.
-const manyemojis = ["😄", "👍", "👏", "👌", "🥇", "🌟", "🎉", "🙌", "🤩", "💯", "🔥", "✨", "🚀", "💖", "🌈", "🌞", "🌠", "🌼", "💪", "😎", "💫", "💓", "🎈", "🎁", "🍾", "🎊", "🥳", "👑", "🌺", "🌻", "🌸"];
+const manyemojis = ["😄", "👍", "👏", "👌", "🥇", "🌟", "🎉", "🙌", "🤩", "💯", "🔥", "✨", "🚀", "💖", "🌈", "🌞", "🌠", "🌼", "💪", "😎", "💫", "💓", "🎈", "🎁", "🍾", "🎊", "🥳", "👑", "🌺", "🌻", "🌸", "🤡"];
 const os = require('os');       // for os info
 
 const gis = require("g-i-s");
